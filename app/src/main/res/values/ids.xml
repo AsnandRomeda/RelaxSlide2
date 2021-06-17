@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="load" type="id" />
+    <item name="editTextStr" type="id" />
+    <item name="editTextNum" type="id" />
+    <item name="save" type="id" />
+    <item name="viewFlipper1" type="id" />
+    <item name="editTextUser" type="id" />
+    <item name="editTextGift" type="id" />
+    <item name="счастье" type="id" />
+</resources>

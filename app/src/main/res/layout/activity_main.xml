@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="94dp"
+        android:backgroundTint="#6205FA"
+        android:bottomRightRadius="50dp"
+        android:text="Save"
+        android:topRightRadius="50dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593"
+        tools:ignore="HardcodedText"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="16dp"
+        android:text="Вспомнить"
+        android:textColor="@color/purple_500"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328"
+        tools:ignore="HardcodedText,UnknownId"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="2dp"
+        android:text="поставь пометку своему воспоминанию:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playButton"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:layout_marginBottom="162dp"
+        android:text="Запись дневника:"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="9dp"
+
+        android:autoText="true"
+        android:hint="@string/put_number"
+        android:singleLine="true"
+        android:text=""
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextStr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="Autofill,HardcodedText,LabelFor,UnknownId" />
+
+    <EditText
+        android:id="@+id/editTextStr"
+        android:layout_width="328dp"
+        android:layout_height="314dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="71dp"
+        android:singleLine="false"
+
+        android:text=""
+        android:hint="@string/write_here"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="Autofill,HardcodedText,UnknownId" />
+
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="411dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="6dp"
+        android:color="@color/purple_500"
+        android:onClick="play"
+        android:text="Хочу расслабиться под воспоминания"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

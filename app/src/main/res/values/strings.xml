@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RelaxSlide</string>
+    <string name="put_number">пометь тут</string>
+    <string name="write_here">пиши сюда / читай отсюда</string>
+    <string name="happiness" />
+    <string name="anger" />
+    <string name="depression" />
+    <string name="счастье" />
+    <string name="злость" />
+    <string name="депрессия" />
+</resources>
