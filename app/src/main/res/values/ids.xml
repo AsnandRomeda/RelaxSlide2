@@ -8,4 +8,5 @@
     <item name="editTextUser" type="id" />
     <item name="editTextGift" type="id" />
     <item name="счастье" type="id" />
+    <item name="linearlayout1" type="id" />
 </resources>

@@ -8,6 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+
+import java.net.URI;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -66,7 +70,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
         intent.putExtra("myNote", savedText);
         startActivity(intent);
+
+
     }
+
 
 /*    public void pause(View view) {
     }

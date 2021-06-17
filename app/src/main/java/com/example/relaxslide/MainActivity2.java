@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
@@ -54,7 +55,7 @@ public class MainActivity2 extends AppCompatActivity {
         //если нейтральное
         {
             for (int j3 : mDrawablesArray_neutral) setFlipperImage(j3);
-            mPlayer = MediaPlayer.create(this, R.raw.neutral);
+            mPlayer = MediaPlayer.create(this, R.raw._normal_);
         }
 
         mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -79,6 +80,9 @@ public class MainActivity2 extends AppCompatActivity {
         mPlayer.stop();
         Intent intent = new Intent(MainActivity2.this, MainActivity.class);
         startActivity(intent);
+
+
+
     }
 
 
