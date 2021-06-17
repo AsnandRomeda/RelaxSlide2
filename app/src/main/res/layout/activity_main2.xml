@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ov"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="200dp" />
+
     <ViewFlipper
         android:id="@+id/viewFlipper1"
         android:layout_width="292dp"
@@ -18,7 +27,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </ViewFlipper>
 
     <Button
         android:id="@+id/stopButton"
@@ -59,13 +70,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="5dp" >
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ov" />
 
     </LinearLayout>
 
